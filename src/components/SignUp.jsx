@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import { firebaseApp } from '../firebase';
 
 class SignUp extends Component {
@@ -6,7 +7,10 @@ class SignUp extends Component {
         super(props);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            error: {
+                message: ''
+            }
         }
     }    
 
@@ -15,34 +19,42 @@ class SignUp extends Component {
         const { email, password } = this.state;
         firebaseApp.auth().createUserWithEmailAndPassword(email, password)
         .catch(error => {
-            console.log('error', error);
+            this.setState({error})
         })
     }
 
     render() {
         return (
-            <div className="form-inline">
-                <h2>Sign up</h2>
+            <div className="form-horizontal" style={{margin: '10% auto', width: '300px', textAlign: 'center'}}>
+                <h2 style={{marginBottom: '30px'}}>Sign up</h2>
                 <div className="form-group">
                     <input 
                         className="form-control"
                         type="text"
-                        placeholder="Your email"
+                        style={{marginBottom: '10px'}}
+                        placeholder="Your email.."
                         onChange = {event => this.setState({email: event.target.value})}
                     />
                     <input
                         className="form-control"
                         type="password"
-                        placeholder="Your password"
+                        style={{marginBottom: '20px'}}
+                        placeholder="Your password.."
                         onChange = {event => this.setState({password: event.target.value})}
                     />
                     <button
                         className="btn btn-primary"
                         type="button"
+                        style={{width: '100%'}}
                         onClick={() => this.signUp()}
                     >
                     Sign Up
                     </button>
+                </div>
+                <div>{this.state.error.message}</div>
+                <div>
+                    <h6>Already a member?</h6>
+                    <Link to={'/signin'}>Sign in instead</Link>
                 </div>
             </div>
         )
