@@ -1,4 +1,4 @@
-import  { SIGNED_IN } from '../constants';
+import  { SIGNED_IN, SET_GOALS } from '../constants';
 
 // This is an action creater
 export function logUser(email){
@@ -8,6 +8,15 @@ export function logUser(email){
         type: SIGNED_IN,
         // Returning an email key with the email that we passed in logUser
         email
+    }
+    return action;
+}
+
+export function setGoals(goals){
+    // New action
+    const action = {
+        type: SET_GOALS,
+        goals
     }
     return action;
 }
