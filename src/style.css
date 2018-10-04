@@ -1,0 +1,9 @@
+.goal-item {
+    display: flex;
+}
+.goal-title {
+    display: inline-block;
+}
+.goal-email {
+    display: inline-block;
+}
