@@ -43,7 +43,6 @@ class AddGoal extends Component {
 
 function mapStateToProps(state){
     const { user } = state;
-    console.log('state in AddGoal.jsx', state);
     return {
         user
     }
