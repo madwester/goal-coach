@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import './AddGoal.css';
 import { connect } from 'react-redux';
-import { goalRef } from '../firebase';
+import { goalRef } from '../../firebase';
 
 class AddGoal extends Component {
     constructor(props){
