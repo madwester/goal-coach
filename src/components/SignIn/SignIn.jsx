@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { firebaseApp } from '../../firebase';
+import './SignIn.css';
 
 class SignIn extends Component {
 
@@ -27,7 +28,7 @@ class SignIn extends Component {
     render() {
         return (
             <div className="form-horizontal" style={{margin: '10% auto', width: '300px', textAlign: 'center'}}>
-                <h2 style={{marginBottom: '30px'}}>Sign in</h2>
+                <h2 className="heading">Sign in</h2>
                 <div className="form-group">
                     <input 
                         type="text" 

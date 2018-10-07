@@ -1,0 +1,11 @@
+.heading {
+    font-family: 'Playfair Display', serif;
+    /*font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;*/
+    font-style: italic;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #fff;
+}

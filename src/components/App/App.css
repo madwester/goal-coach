@@ -1,14 +1,27 @@
+:root {
+    --color-aqua: #71c2d3;
+    --color-pink: #db9a99;
+    --color-orange: #f09765;
+    
+}
+
 body {
     font-size: 10px;
+    background: linear-gradient(to right top, var(--color-aqua) 20%, var(--color-pink), var(--color-orange));
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
+
 .main-container {
     max-width: 100rem;
     margin: 0 auto;
     display: flex;
 }
+
 .goals {
     background-color: green;
 }
+
 .completedGoals {
     background-color: red;
 }
