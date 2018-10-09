@@ -27,35 +27,32 @@ class SignIn extends Component {
 
     render() {
         return (
-            <div className="form-horizontal" style={{margin: '10% auto', width: '300px', textAlign: 'center'}}>
-                <h2 className="heading">Sign in</h2>
-                <div className="form-group">
+            <div className="form">
+                <h2 className="form_heading">Sign in</h2>
+                <div className="form_group">
                     <input 
                         type="text" 
-                        className="form-control"
-                        style={{marginBottom: '10px'}}
+                        className="form-control form_input"
                         placeholder="Your email.."
                         onChange={event => this.setState({email: event.target.value})}
                     />
                     <input 
                         type="password"
-                        className="form-control"
-                        style={{marginBottom: '20px'}}
+                        className="form-control form_input"
                         placeholder="Your password.."
                         onChange={event => this.setState({password: event.target.value})}
                     />
                     <button 
-                        className="btn btn-primary"
+                        className="btn-default"
                         type="button"
-                        style={{width: '100%'}}
                         onClick={() => this.signIn()}
                     >
                     Sign In
                     </button>
                 </div>
-                <div>{this.state.error.message}</div>
-                <h6>Not a member yet?</h6>
-                <div><Link to={'/signup'}>Sign up instead</Link></div>
+                <div className="form_error">{this.state.error.message}</div>
+                <h6 className="form_sub-heading">Not a member yet? <Link className="form_link" to={'/signup'}>Sign up instead</Link></h6>
+                <div></div>
             </div>
         )
     }

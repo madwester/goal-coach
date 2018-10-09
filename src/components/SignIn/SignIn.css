@@ -1,4 +1,20 @@
-.heading {
+.btn-default {
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 7px;
+    background-color: var(--color-aqua);
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+}
+.form {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+.form_heading {
     font-family: 'Playfair Display', serif;
     /*font-family: 'Kaushan Script', cursive;
     font-family: 'Open Sans', sans-serif;
@@ -8,4 +24,21 @@
     font-weight: 400;
     font-size: 4rem;
     color: #fff;
+}
+.form_input {
+    margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
+}
+.form_error {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.form_sub-heading {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+.form_link {
+    color: #fff;
+    text-decoration: underline;
 }
