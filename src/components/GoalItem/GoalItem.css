@@ -1,0 +1,20 @@
+.goal-item {
+    display: flex;
+    background-color: rgba(255, 255, 255, .3);
+    padding: .4rem 1rem;
+    border-radius: 5px;
+}
+
+.goal-item_text {
+    width: 90%;
+}
+
+.goal-item_symbol {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.fas {
+    font-size: 1.8rem;
+    color: white;
+}

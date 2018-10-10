@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { completeGoalRef, goalRef } from '../../firebase';
+import './GoalItem.css';
+import Button from '../Button/Button';
 
 class GoalItem extends Component {
     completeGoal() {
@@ -15,13 +17,18 @@ class GoalItem extends Component {
         const { email, title } = this.props.goal;
         return (
             <div className="goal-item">
-                <h5 className="goal-title">{title}</h5>
-                <h5 className="goal-email"> submitted by {email}</h5>
-                <button className="btn btn-sm btn-primary"
-                onClick={() => this.completeGoal()}
-                >
-                    Complete
-                </button>
+                <div className="goal-item_text">
+                    <h5 className="goal-title">{title}</h5>
+                    <h5 className="goal-email"> submitted by {email}</h5>
+                </div>
+                <div className="goal-item_symbol">
+                    <Button 
+                        className="btn-symbol"
+                        title={<i className='fas fa-check'></i>}
+                        action={() => this.completeGoal()}
+                    >
+                    </Button>
+                </div>
             </div>
         )
     }

@@ -1,0 +1,23 @@
+.add-goal {
+
+}
+.add-goal_heading {
+    font-family: 'Changa One', cursive;
+    /*font-family: 'Bowlby One', cursive;
+    font-family: 'Rammetto One', cursive;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Sigmar One', cursive;
+    font-family: 'Bevan', cursive;*/
+    color: #fff;
+    font-size: 4.5rem;
+    margin-block-end: 2rem;
+}
+.add-goal_input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    padding: 1rem;
+    border: 0;
+    font-size: 1.4rem;
+}

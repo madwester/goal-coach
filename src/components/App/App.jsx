@@ -14,11 +14,11 @@ class App extends Component {
         return (
             <div className="content">
                 <div className="main-container">
-                    <div className="container goals">
+                    <div className="container container_goals">
                         <AddGoal/>
                         <GoalList/>
                     </div>
-                    <div className="container completedGoals">
+                    <div className="container container_completedGoals">
                         <CompleteGoalList/>
                     </div>
                 </div>

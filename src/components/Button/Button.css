@@ -1,0 +1,23 @@
+button:focus {
+    outline: 0;
+}
+.btn-default {
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 7px;
+    background-color: var(--color-aqua);
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+}
+.btn-symbol {
+    border: 0;
+    background-color: transparent;
+}
+.btn-clear {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.4rem;
+}

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { goalRef } from '../../firebase';
 import { setGoals } from '../../actions';
 import GoalItem from '../GoalItem/GoalItem';
+import './GoalList.css';
 
 class GoalList extends Component {
     componentDidMount(){
@@ -19,7 +20,8 @@ class GoalList extends Component {
     }
     render(){
         return (
-            <div>
+            <div className="list">
+                <h2 className="list_heading">Goals to Complete</h2>
                 {
                     // Map over one goal at a tima
                     this.props.goals.map((goal, index) => {

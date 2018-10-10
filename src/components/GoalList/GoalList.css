@@ -1,0 +1,11 @@
+.list {
+    margin-top: 2rem;
+}
+.list_heading {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin-bottom: 1.8rem;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #fff;
+}

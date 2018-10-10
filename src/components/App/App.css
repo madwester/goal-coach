@@ -2,26 +2,32 @@
     --color-aqua: #71c2d3;
     --color-pink: #db9a99;
     --color-orange: #f09765;
-    
 }
 
 body {
     font-size: 10px;
     background: linear-gradient(to right top, var(--color-aqua) 20%, var(--color-pink), var(--color-orange));
     height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .main-container {
-    max-width: 100rem;
+    max-width: 120rem;
     margin: 0 auto;
     display: flex;
+    min-height: 60rem;
+}
+.container {
+    margin: 1rem;
+    padding: 3rem;
+}
+.container_goals {
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px #fff;
 }
 
-.goals {
-    background-color: green;
-}
-
-.completedGoals {
-    background-color: red;
+.container_completedGoals {
+    display: flex;
+    flex-direction: column;
 }

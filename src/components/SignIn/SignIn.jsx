@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { firebaseApp } from '../../firebase';
 import './SignIn.css';
+import Button from '../Button/Button'
 
 class SignIn extends Component {
 
@@ -42,13 +43,12 @@ class SignIn extends Component {
                         placeholder="Your password.."
                         onChange={event => this.setState({password: event.target.value})}
                     />
-                    <button 
-                        className="btn-default"
+                    <Button
+                        action={() => this.signIn()}
+                        title="Sign in"
                         type="button"
-                        onClick={() => this.signIn()}
-                    >
-                    Sign In
-                    </button>
+                        className="btn-default"
+                    />
                 </div>
                 <div className="form_error">{this.state.error.message}</div>
                 <h6 className="form_sub-heading">Not a member yet? <Link className="form_link" to={'/signup'}>Sign up instead</Link></h6>
