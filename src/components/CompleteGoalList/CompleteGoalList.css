@@ -6,6 +6,11 @@
     display: flex;
     margin-bottom: 1.8rem;
 }
+
+.completed_heading-box-right {
+    position: relative;
+}
+
 .completed_heading {
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -22,8 +27,12 @@
 }
 .drop {
     margin-top: 1rem;
+    margin-left: 1rem;
     padding: 1rem .5rem;
     background-color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    position: absolute;
+    width: 12rem;
 }
 .completed_item {
 

@@ -11,7 +11,7 @@
     font-family: 'Bevan', cursive;*/
     color: #fff;
     font-size: 4.5rem;
-    margin-block-end: 2rem;
+    margin: 0 0 2.5rem 0;
 }
 .add-goal_input {
     width: 100%;
